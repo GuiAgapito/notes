@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./images/ico.png" type="image/x-icon">
+  <title>Notes</title>
+  <link id="current_theme" rel="stylesheet" href="./css/style_light_mode.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <img src="./images/logo.png" alt="Note">
+        Notes
+    </div>    
+
+    <div id="searchbar" class="searchbar">
+      <svg id="icon-search" class="svg-icon" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M9.6 4.8a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6ZM2.4 9.6a7.2 7.2 0 1 1 13.068 4.171l5.78 5.78a1.2 1.2 0 0 1-1.696 1.697l-5.78-5.779A7.2 7.2 0 0 1 2.4 9.6Z"
+          clip-rule="evenodd"></path>
+      </svg>
+
+      <input id="input-search" type="text">
+
+      <svg id="icon-clear-search" class="svg-icon" onclick="inputClear()" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M5.152 5.152a1.2 1.2 0 0 1 1.696 0L12 10.303l5.152-5.151a1.2 1.2 0 1 1 1.696 1.696L13.697 12l5.151 5.152a1.2 1.2 0 0 1-1.696 1.696L12 13.697l-5.152 5.151a1.2 1.2 0 0 1-1.696-1.696L10.303 12 5.152 6.848a1.2 1.2 0 0 1 0-1.696Z"
+          clip-rule="evenodd"></path>
+      </svg>
+    </div>
+
+    <div class="icons">
+      <!-- Dark Theme -->
+      <svg id="dark-mode" class="svg-icon" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"></path>
+      </svg>
+    
+      <!-- Light Theme -->
+      <svg id="light-mode" class="svg-icon" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round"
+        stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 7a5 5 0 1 0 0 10 5 5 0 1 0 0-10z"></path>
+        <path d="M12 1v2"></path>
+        <path d="M12 21v2"></path>
+        <path d="m4.22 4.22 1.42 1.42"></path>
+        <path d="m18.36 18.36 1.42 1.42"></path>
+        <path d="M1 12h2"></path>
+        <path d="M21 12h2"></path>
+        <path d="m4.22 19.78 1.42-1.42"></path>
+        <path d="m18.36 5.64 1.42-1.42"></path>
+      </svg>    
+    </div>
+  </nav>
+
+  <main>    
+    <div id="new-note" class="new-note">
+      <svg class="svg-icon" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2a10 10 0 1 0 0 20 10 10 0 1 0 0-20z"></path>
+        <path d="M12 8v8"></path>
+        <path d="M8 12h8"></path>
+      </svg>
+      Nova Nota
+    </div>
+
+    <div id="content" class="content"></div>    
+    </div>
+  </main>
+
+  <!-- Script JS -->
+  <script src="./js/theme.js"></script>
+  <script src="./js/localStorageData.js"></script>
+  <script src="./js/searchbar.js"></script>
+  <script src="./js/textarea.js"></script>
+</body>
+</html>
