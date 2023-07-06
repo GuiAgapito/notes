@@ -1,8 +1,13 @@
 # Notes
 
-Description
+This is a note-taking web application built with HTML, CSS, and JavaScript. It allows users to create and manage notes with titles and content. The application supports adding new notes, deleting notes, and saving notes to local storage.
 
-Notes is a simple website that allows users to create, edit, and view notes without the need to provide personal information for login or any kind of authentication.
+## Features
+
+- Creation of new notes with titles and content
+- Deletion of notes
+- Saving notes to local storage
+- Persistence of notes on page reload
 
 ## Technologies Used
 
@@ -10,30 +15,17 @@ Notes is a simple website that allows users to create, edit, and view notes with
 - CSS
 - JavaScript
 
-## Features
-
-- Create a new note.
-- View existing notes.
-- Edit created notes.
-
-## Prerequisites
-
-Make sure you have an up-to-date web browser installed on your computer to run the website correctly.
-
-## Installation
-
-1. Clone this repository: `git clone https://github.com/GuiAgapito/GuiAgapito.github.io.git`
-2. Navigate to the project directory: `cd your-project`
-
 ## How to Use
 
-1. Open the `index.html` file in your preferred web browser.
-2. On the homepage, you will see a list of existing notes, if any.
-3. To create a new note, click the "New Note" button, and the note field will appear for you to fill in.
-4. To edit an existing note, simply click on it and edit directly without the need for an additional button.
-5. To delete an existing note, click the trash can icon button next to the desired note.
+1. Open the index.html file in your web browser.
+2. The application will load any saved notes from local storage.
+3. To add a new note, click the "Nova Nota" button.
+4. Enter a title and content for the note in the respective input fields.
+5. To delete a note, click the trash can icon next to the note.
+6. The notes are automatically saved to local storage whenever a new note is added or a note is deleted.
+7. The saved notes will be loaded automatically when the application is reloaded.
 
 ## Contact
 
-Guilherme Agapito Lima - guilherme.agapito2004@gmail.com
-Notes: (https://guiagapito.github.io).
+- Guilherme Agapito Lima - guilherme.agapito2004@gmail.com
+- Generate Password: (https://guiagapito.github.io/notes/).
