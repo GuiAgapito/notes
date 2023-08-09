@@ -1,4 +1,4 @@
-# Notes
+# Notes do Gui
 
 This is a note-taking web application built with HTML, CSS, and JavaScript. It allows users to create and manage notes with titles and content. The application supports adding new notes, deleting notes, and saving notes to local storage.
 
