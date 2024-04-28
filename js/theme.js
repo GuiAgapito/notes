@@ -31,6 +31,3 @@ function checkModeTheme() {
 
 // Check the mode theme on page load
 checkModeTheme();
-let linkTheme = document.getElementById("current_theme");
-const iconDarkTheme = document.getElementById("dark-mode");
-const iconLightTheme = document.getElementById("light-mode");
